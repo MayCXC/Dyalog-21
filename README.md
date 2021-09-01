@@ -14,7 +14,7 @@ The problem specifications given on this site can also be downloaded as PDF file
 [PDF of the Phase 2 problem set](https://www.dyalogaplcompetition.com/Downloads/Phase%202%20Problems.pdf)
 
 ## Approach
-APL lets you do most kinds iteration and reduction with symbolic operators, and compose these into dense functions with "glue" operators. There are three syntaxes to choose from for a function definition, which are called a tradfn, dfn, or tacit function. I used only dfn and tacit functions in my programs because they compose the most elegantly, and [TryAPL](https://tryapl.org/) as my REPL to come up with answers one piece at a time. For example, to make a tacit function that checks if its input is a magic square:
+APL lets you do most kinds iteration and reduction with symbolic operators, and compose these into dense functions with "glue" operators. There are three syntaxes to choose from for a function definition, which are called a tradfn, dfn, or tacit function. I used only dfn and tacit functions in my programs because they compose the most elegantly, together with [TryAPL](https://tryapl.org/) as a REPL to come up with answers one piece at a time. For example, to make a tacit function that checks if its input is a magic square:
 
 With any nxn array,
 
