@@ -1,5 +1,5 @@
 # Dyalog-APL-Competition-2021
-https://www.dyalog.com/student-competition.htm
+https://www.dyalog.com/news/146/420/2021-APL-Problem-Solving-Competition-Winners.htm
 
 ## Overview
 The competition consists of two parts:
