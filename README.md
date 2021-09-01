@@ -72,6 +72,6 @@ and check their equality,
 
 which makes our final program `((∧/⊃=⊢)∘(+⌿)∘(⊃,/)∘((⊢,1 1∘⍉)¨(⊂∘⍉,⊂∘⌽)))`. That string alone still looks arcane to me, but broken down piece by piece it becomes much clearer, and remains shorter winded than [most other languages](https://www.geeksforgeeks.org/check-given-matrix-is-magic-square-or-not/).
 
-## Outcome
+# Result: Getting there!
 
 I placed third in Phase II and took home bronze for the states, and I am looking forward to using what I learned to do better next year.
