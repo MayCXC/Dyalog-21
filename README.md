@@ -9,4 +9,5 @@ The competition consists of two parts:
 The problem specifications given on this site can also be downloaded as PDF files:
 
 [PDF of the Phase 1 problem set](https://www.dyalogaplcompetition.com/Downloads/Phase%201%20Problems.pdf)
+
 [PDF of the Phase 2 problem set](https://www.dyalogaplcompetition.com/Downloads/Phase%202%20Problems.pdf)
