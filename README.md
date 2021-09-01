@@ -12,3 +12,66 @@ The problem specifications given on this site can also be downloaded as PDF file
 [PDF of the Phase 1 problem set](https://www.dyalogaplcompetition.com/Downloads/Phase%201%20Problems.pdf)
 
 [PDF of the Phase 2 problem set](https://www.dyalogaplcompetition.com/Downloads/Phase%202%20Problems.pdf)
+
+## Approach
+APL lets you do most kinds iteration and reduction with symbolic operators, and compose these into dense functions with "glue" operators. There are three syntaxes to choose from for a function definition, which are called a tradfn, dfn, or tacit function. I used only dfn and tacit functions in my programs because they compose the most elegantly, and [TryAPL](https://tryapl.org/) as my REPL to come up with answers one piece at a time. For example, to make a tacit function that checks if its input is a magic square:
+
+With any nxn array,
+
+```
+      3 3⍴4 9 2 3 5 7 8 1 6
+4 9 2
+3 5 7
+8 1 6
+```
+
+we can take its reverse and transpose,
+
+```
+      (⊂∘⍉,⊂∘⌽) 3 3⍴4 9 2 3 5 7 8 1 6
+┌─────┬─────┐
+│4 3 8│2 9 4│
+│9 5 1│7 5 3│
+│2 7 6│6 1 8│
+└─────┴─────┘
+```
+
+concatenate their diagonals,
+
+```
+      ((⊢, 1 1∘⍉)¨(⊂∘⍉,⊂∘⌽)) 3 3⍴4 9 2 3 5 7 8 1 6
+┌───────┬───────┐
+│4 3 8 4│2 9 4 2│
+│9 5 1 5│7 5 3 5│
+│2 7 6 6│6 1 8 8│
+└───────┴───────┘
+```
+
+remove their nesting,
+
+```
+      ((⊃,/)∘((⊢,1 1∘⍉)¨(⊂∘⍉,⊂∘⌽))) 3 3⍴4 9 2 3 5 7 8 1 6
+4 3 8 4 2 9 4 2
+9 5 1 5 7 5 3 5
+2 7 6 6 6 1 8 8
+```
+
+sum their columns,
+
+```
+      ((+⌿)∘(⊃,/)∘((⊢,1 1∘⍉)¨(⊂∘⍉,⊂∘⌽))) 3 3⍴4 9 2 3 5 7 8 1 6
+15 15 15 15 15 15 15 15
+```
+
+and check their equality,
+
+```
+      ((∧/⊃=⊢)∘(+⌿)∘(⊃,/)∘((⊢,1 1∘⍉)¨(⊂∘⍉,⊂∘⌽))) 3 3⍴4 9 2 3 5 7 8 1 6
+1
+```
+
+which makes our final program `((∧/⊃=⊢)∘(+⌿)∘(⊃,/)∘((⊢,1 1∘⍉)¨(⊂∘⍉,⊂∘⌽)))`. That string alone still looks arcane to me, but broken down piece by piece it becomes much clearer, and remains shorter winded than [most other languages](https://www.geeksforgeeks.org/check-given-matrix-is-magic-square-or-not/).
+
+## Outcome
+
+I placed third in Phase II and took home bronze for the states, and I am looking forward to using what I learned to do better next year.
