@@ -74,4 +74,4 @@ which makes our final program `((∧/⊃=⊢)∘(+⌿)∘(⊃,/)∘((⊢,1 1∘�
 
 # Result: Getting there!
 
-I placed third in Phase II and took home bronze for the states, and I am looking forward to using what I learned to do better next year.
+[I placed third in Phase II](https://www.dyalog.com/news/147/420/Meet-The-2021-APL-Problem-Solving-Competition-Winners.htm) and took home bronze for the states, and I am looking forward to using what I learned to do better next year.
