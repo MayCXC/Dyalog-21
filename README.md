@@ -1,4 +1,4 @@
-# Dyalog-APL-Competition-2021
+# Dyalog APL Problem Solving Competition 2021
 https://www.dyalog.com/news/147/420/Meet-The-2021-APL-Problem-Solving-Competition-Winners.htm
 
 ## Overview
